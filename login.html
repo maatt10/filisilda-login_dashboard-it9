@@ -4,48 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
-    <style>
-        .login-container {
-            max-width: 400px;
-            margin: 30px auto;
-            margin-top: 150px;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 50px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        form {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-        h2 {
-            text-align: center;
-            color: #333;
-        }
-        button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-            }
-        input {
-            padding: 10px;
-            margin-top: 2px;
-            margin-bottom: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-    </style>
+<link rel="stylesheet" href="style.css">
     </head>
     <script>
 function login(event) {
     event.preventDefault();
 
-    // fake login (demo only)
     localStorage.setItem("loggedIn", "true");
 
     window.location.href = "dashboard.html";

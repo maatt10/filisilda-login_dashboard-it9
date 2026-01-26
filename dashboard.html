@@ -4,75 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f4f4;
-        }
-
-        .dashboard-container {
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 30px;
-            background: #ffffff;
-            border-radius: 50px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 50px;
-        }
-
-        h4 {
-            text-align: left;
-            margin-left: 10px;
-            color: #555;
-            font-weight: normal;
-            margin-bottom: 30px;
-              }
-        table {
-            width: 95%;
-            margin-left: 20px;
-            margin-right: 20px;
-            border-collapse: collapse;
-            font-size: 15px;
-        }
-
-        th {
-            background-color: #007BFF;
-            color: white;
-            padding: 12px;
-            text-align: left;
-        }
-
-        td {
-            padding: 12px;
-            border-bottom: 1px solid #ddd;  
-            color: #333;
-        }
-
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        .logout-btn {
-            display: block;
-            margin: 30px auto 0;
-            padding: 10px 20px;
-            background-color: #077BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        
-        .logout-btn:hover {
-            opacity: 0.9;
-        }
-    </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <script>
 if (!localStorage.getItem("loggedIn")) {
