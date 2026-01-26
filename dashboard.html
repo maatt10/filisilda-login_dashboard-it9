@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .dashboard-container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 50px;
+        }
+
+        h4 {
+            text-align: left;
+            margin-left: 10px;
+            color: #555;
+            font-weight: normal;
+            margin-bottom: 30px;
+              }
+        table {
+            width: 95%;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-collapse: collapse;
+            font-size: 15px;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;  
+            color: #333;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .logout-btn {
+            display: block;
+            margin: 30px auto 0;
+            padding: 10px 20px;
+            background-color: #077BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .logout-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<script>
+if (!localStorage.getItem("loggedIn")) {
+    window.location.href = "login.html";
+}
+</script>
+<body>
+    <div class="dashboard-container">
+        <h1>Dashboard</h1>
+        <h4>Welcome to your dashboard!</h4>
+        <table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Course</th>
+  </tr>
+  <tr>
+    <td>557990</td>
+    <td>Levi Jasper Alicaya</td>
+    <td>l.alicaya.557990@umindanao.edu.ph</td>
+    <td>BSIT</td>
+  </tr>
+  <tr>
+    <td>557934</td>
+    <td>Matthew Brian C. Filisilda</td>
+    <td>m.filisilda.557934@umindanao.edu.ph</td>
+    <td>BSIT</td>
+  </tr>
+  <tr>
+    <td>557533</td>
+    <td>Lamber Louie S. Fernando</td>
+    <td>l.fernando.557533@umindanao.edu.ph</td>
+    <td>BSIT</td>
+  </tr>
+</table>
+
+<button class="logout-btn" onclick="logout()">Logout</button>
+<script>
+function logout() {
+    localStorage.removeItem("loggedIn");
+    window.location.href = "login.html";
+}
+</script>
+    </div>
+    
+</body>
+</html>
